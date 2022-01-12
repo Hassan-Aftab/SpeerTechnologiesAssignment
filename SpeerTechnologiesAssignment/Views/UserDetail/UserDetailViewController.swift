@@ -27,6 +27,7 @@ class UserDetailViewController: UIViewController {
 
         userView.isHidden = true
         bindViews()
+        self.title = "Details"
     }
 
     override func viewDidAppear(_ animated: Bool) {

@@ -20,9 +20,11 @@ class FollowersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViews()
         let collectionLayout = UICollectionViewFlowLayout()
+        let width = (view.frame.width/2)-40
+        collectionLayout.itemSize = CGSize(width: width, height: width)
         collectionView.collectionViewLayout = collectionLayout
+        bindViews()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -82,22 +84,15 @@ extension FollowersViewController: UICollectionViewDelegate, UICollectionViewDat
 
         guard let user = users?[indexPath.item] else { return cell }
         cell.setup(user)
+        cell.didTap = { [weak self] in
+            self?.viewModel?.input.didSelect?(user)
+        }
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let user = users?[indexPath.item] {
-            viewModel?.input.didSelect?(user)
-        }
-    }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (view.frame.width/2)-30
-        return CGSize(width: width, height: width)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: 0, left: 30, bottom: 0, right: 30)
     }
 }
 

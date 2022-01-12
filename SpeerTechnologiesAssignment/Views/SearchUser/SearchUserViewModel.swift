@@ -58,6 +58,7 @@ class SearchUserViewModel {
     }
 
     func search(_ username: String) {
+        guard username != "" else { return }
         searchUserService.searchUser(username: username) { res in
             self.output.setLoaderHidden?(true)
             switch res {

@@ -12,6 +12,7 @@ class FollowerFollowingCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var username: UILabel!
 
+    var didTap: (()->())?
     func setup(_ user: User) {
         imageView.layer.cornerRadius = imageView.frame.width/2
         imageView.kf.setImage(with: URL(string: user.avatarUrl))
@@ -19,5 +20,8 @@ class FollowerFollowingCell: UICollectionViewCell {
 
         self.contentView.layer.borderColor = UIColor.lightGray.cgColor
         self.contentView.layer.borderWidth = 1
+    }
+    @IBAction func didSelect(_ sender: Any) {
+        didTap?()
     }
 }
