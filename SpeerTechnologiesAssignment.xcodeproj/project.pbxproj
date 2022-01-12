@@ -10,6 +10,8 @@
 		046B850B278F18A900385F9D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850A278F18A900385F9D /* UserDetailViewController.swift */; };
 		046B850D278F1A6100385F9D /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850C278F1A6100385F9D /* UserDetailViewModel.swift */; };
 		046B850F278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */; };
+		046B8511278F2B1B00385F9D /* MockUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B8510278F2B1B00385F9D /* MockUser.json */; };
+		046B8513278F2C0800385F9D /* MockNoUserFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B8512278F2C0800385F9D /* MockNoUserFound.json */; };
 		046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */; };
 		046B85D9278DFCCD00BB5E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */; };
 		046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */; };
@@ -67,6 +69,8 @@
 		046B850A278F18A900385F9D /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		046B850C278F1A6100385F9D /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerBuilder.swift; sourceTree = "<group>"; };
+		046B8510278F2B1B00385F9D /* MockUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockUser.json; sourceTree = "<group>"; };
+		046B8512278F2C0800385F9D /* MockNoUserFound.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNoUserFound.json; sourceTree = "<group>"; };
 		046B85D3278DFCCD00BB5E6D /* SpeerTechnologiesAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeerTechnologiesAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 			path = UserDetail;
 			sourceTree = "<group>";
 		};
+		046B8514278F2C1700385F9D /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				046B8510278F2B1B00385F9D /* MockUser.json */,
+				046B8512278F2C0800385F9D /* MockNoUserFound.json */,
+			);
+			path = MockObjects;
+			sourceTree = "<group>";
+		};
 		046B85CA278DFCCD00BB5E6D = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				046B85ED278DFCD000BB5E6D /* SpeerTechnologiesAssignmentTests.swift */,
+				046B8514278F2C1700385F9D /* MockObjects */,
 			);
 			path = SpeerTechnologiesAssignmentTests;
 			sourceTree = "<group>";
@@ -428,6 +442,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046B8511278F2B1B00385F9D /* MockUser.json in Resources */,
+				046B8513278F2C0800385F9D /* MockNoUserFound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
