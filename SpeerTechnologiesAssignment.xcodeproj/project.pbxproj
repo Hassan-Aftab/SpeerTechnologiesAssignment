@@ -33,6 +33,14 @@
 		046B862F278E1BB700BB5E6D /* NoUserFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B862E278E1BB700BB5E6D /* NoUserFoundResponse.swift */; };
 		046B8631278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8630278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift */; };
 		046B8634278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8633278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift */; };
+		046BFEFF278EF0D60051EC63 /* IHProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 046BFEFE278EF0D60051EC63 /* IHProgressHUD */; };
+		046BFF02278EF5370051EC63 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 046BFF01278EF5370051EC63 /* Kingfisher */; };
+		046BFF04278EF8BF0051EC63 /* NoUserFoundBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */; };
+		046BFF09278F04530051EC63 /* FollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */; };
+		046BFF0A278F04590051EC63 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF08278EFCC80051EC63 /* FollowersViewController.swift */; };
+		046BFF0C278F090A0051EC63 /* FollowerFollowingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */; };
+		046BFF0E278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */; };
+		046BFF10278F0CE70051EC63 /* FollowersViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +91,12 @@
 		046B862E278E1BB700BB5E6D /* NoUserFoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserFoundResponse.swift; sourceTree = "<group>"; };
 		046B8630278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserSearchBarDelegate.swift; sourceTree = "<group>"; };
 		046B8633278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserSearchBarInteractor.swift; sourceTree = "<group>"; };
+		046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserFoundBuilder.swift; sourceTree = "<group>"; };
+		046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewModel.swift; sourceTree = "<group>"; };
+		046BFF08278EFCC80051EC63 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFollowingCell.swift; sourceTree = "<group>"; };
+		046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewControllerBuilder.swift; sourceTree = "<group>"; };
+		046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046BFF02278EF5370051EC63 /* Kingfisher in Frameworks */,
+				046BFEFF278EF0D60051EC63 /* IHProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +155,7 @@
 				046B8614278E09CA00BB5E6D /* NetworkCalls */,
 				046B860E278E098100BB5E6D /* NetworkLayer */,
 				046B8610278E098200BB5E6D /* NetworkService */,
+				046BFF05278EFCA20051EC63 /* FollowersView */,
 				046B8606278E06D600BB5E6D /* SearchUser */,
 				046B85DC278DFCCD00BB5E6D /* Main.storyboard */,
 				046B85DF278DFCD000BB5E6D /* Assets.xcassets */,
@@ -172,6 +189,7 @@
 				046B8609278E06F800BB5E6D /* No User Found View */,
 				046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */,
 				046B8607278E06E600BB5E6D /* SearchUserViewModel.swift */,
+				046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */,
 			);
 			path = SearchUser;
 			sourceTree = "<group>";
@@ -181,6 +199,7 @@
 			children = (
 				046B860A278E071000BB5E6D /* NoUserFoundView.xib */,
 				046B860C278E071E00BB5E6D /* NoUserFoundView.swift */,
+				046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */,
 			);
 			path = "No User Found View";
 			sourceTree = "<group>";
@@ -250,6 +269,17 @@
 			path = SearchBar;
 			sourceTree = "<group>";
 		};
+		046BFF05278EFCA20051EC63 /* FollowersView */ = {
+			isa = PBXGroup;
+			children = (
+				046BFF08278EFCC80051EC63 /* FollowersViewController.swift */,
+				046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */,
+				046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */,
+				046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */,
+			);
+			path = FollowersView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,6 +296,10 @@
 			dependencies = (
 			);
 			name = SpeerTechnologiesAssignment;
+			packageProductDependencies = (
+				046BFEFE278EF0D60051EC63 /* IHProgressHUD */,
+				046BFF01278EF5370051EC63 /* Kingfisher */,
+			);
 			productName = SpeerTechnologiesAssignment;
 			productReference = 046B85D3278DFCCD00BB5E6D /* SpeerTechnologiesAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +372,10 @@
 				Base,
 			);
 			mainGroup = 046B85CA278DFCCD00BB5E6D;
+			packageReferences = (
+				046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */,
+				046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 046B85D4278DFCCD00BB5E6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,12 +423,18 @@
 				046B8627278E09CA00BB5E6D /* GetFollowersResponse.swift in Sources */,
 				046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */,
 				046B8629278E09CA00BB5E6D /* GetFollowersHandler.swift in Sources */,
+				046BFF0E278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift in Sources */,
 				046B8634278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift in Sources */,
 				046B8608278E06E600BB5E6D /* SearchUserViewModel.swift in Sources */,
 				046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */,
+				046BFF0A278F04590051EC63 /* FollowersViewController.swift in Sources */,
+				046BFF04278EF8BF0051EC63 /* NoUserFoundBuilder.swift in Sources */,
+				046BFF10278F0CE70051EC63 /* FollowersViewControllerBuilder.swift in Sources */,
+				046BFF0C278F090A0051EC63 /* FollowerFollowingCell.swift in Sources */,
 				046B8624278E09CA00BB5E6D /* GithubAPI.swift in Sources */,
 				046B862F278E1BB700BB5E6D /* NoUserFoundResponse.swift in Sources */,
 				046B8631278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift in Sources */,
+				046BFF09278F04530051EC63 /* FollowersViewModel.swift in Sources */,
 				046B85D9278DFCCD00BB5E6D /* SceneDelegate.swift in Sources */,
 				046B862D278E0F3000BB5E6D /* User.swift in Sources */,
 				046B8622278E09CA00BB5E6D /* SearchUserRequest.swift in Sources */,
@@ -758,6 +802,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftify-Corp/IHProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		046BFEFE278EF0D60051EC63 /* IHProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */;
+			productName = IHProgressHUD;
+		};
+		046BFF01278EF5370051EC63 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 046B85CB278DFCCD00BB5E6D /* Project object */;
 }

@@ -19,6 +19,7 @@ class SearchUserViewModel {
 
     struct Output {
         var showSearchBarCancelButton: ((Bool)->())?
+        var setLoaderHidden: ((Bool)->())?
         var clearSearchBar: (()->())?
         var resignSearchBar: (()->())?
         var onError: ((Error)->())?
@@ -36,6 +37,9 @@ class SearchUserViewModel {
 
         input.search = {
             self.search($0)
+            self.output.setLoaderHidden?(false)
+            self.output.showSearchBarCancelButton?(false)
+            self.output.resignSearchBar?()
         }
 
         input.searchBarBeginEditing = {
@@ -55,6 +59,7 @@ class SearchUserViewModel {
 
     func search(_ username: String) {
         searchUserService.searchUser(username: username) { res in
+            self.output.setLoaderHidden?(true)
             switch res {
             case .failure(let error):
                 self.output.onError?(error)

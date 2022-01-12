@@ -6,7 +6,7 @@
 //
 
 protocol GetFollowersHandler {
-    func getCarList(username: String, completion: @escaping CompletionHandler<GetFollowersResponse>)
+    func getUsers(username: String, completion: @escaping CompletionHandler<GetFollowersResponse>)
 }
 
 class GetFollowersHandlerService: GetFollowersHandler {
@@ -16,7 +16,7 @@ class GetFollowersHandlerService: GetFollowersHandler {
         self.networkService = networkService
     }
 
-    func getCarList(username: String,
+    func getUsers(username: String,
                     completion: @escaping CompletionHandler<GetFollowersResponse>){
 
         let request = GetFollowersRequest(username: username)
