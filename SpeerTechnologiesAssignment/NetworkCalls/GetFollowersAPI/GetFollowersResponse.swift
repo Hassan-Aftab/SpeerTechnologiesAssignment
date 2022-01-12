@@ -5,6 +5,7 @@
 //  Created by Hassan Aftab on 11/01/2022.
 //
 
+/// Response for Get followers api
 struct GetFollowersResponse: Codable {
     let followers: [User]?
 

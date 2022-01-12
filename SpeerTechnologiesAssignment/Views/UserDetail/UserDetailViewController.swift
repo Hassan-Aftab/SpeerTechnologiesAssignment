@@ -9,8 +9,11 @@ import UIKit
 import IHProgressHUD
 import Kingfisher
 
+/// Shows user details
 class UserDetailViewController: UIViewController {
 
+
+    //MARK: properties
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var usernameLabel: UILabel!
@@ -22,6 +25,7 @@ class UserDetailViewController: UIViewController {
     var user: User?
     var viewModel = UserDetailViewModel()
 
+    //MARK: VC Lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +41,7 @@ class UserDetailViewController: UIViewController {
         }
     }
 
+    //MARK: Event Handling
     func bindViews() {
 
         imageView.layer.cornerRadius = imageView.frame.height/2

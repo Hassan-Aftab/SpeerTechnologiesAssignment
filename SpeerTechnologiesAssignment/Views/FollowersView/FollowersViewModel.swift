@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class FollowersViewModel {
+
+    //MARK: Input/Output
     struct Input {
         var viewDidAppear: (()->())?
         var didSelect: ((User)->())?
@@ -21,12 +23,14 @@ class FollowersViewModel {
         var showUserDetail:((User?)->())?
     }
 
+    //MARK: Properties
     var input = Input()
     var output = Output()
 
     var username: String?
-
     private let followerService: GetFollowersHandler!
+
+    //MARK: Init
     init(_ followerService: GetFollowersHandler = GetFollowersHandlerService(),
          _ username: String) {
         self.followerService = followerService
@@ -42,6 +46,7 @@ class FollowersViewModel {
         }
     }
 
+    //MARK: API call
     func getFollowers(_ username: String) {
         followerService.getUsers(username: username) { res in
             self.output.setLoaderHidden?(true)

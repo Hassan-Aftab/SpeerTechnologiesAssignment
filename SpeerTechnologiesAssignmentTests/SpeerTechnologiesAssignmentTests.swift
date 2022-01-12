@@ -19,30 +19,45 @@ class SearchUserViewModelTests: XCTestCase {
 
     override func tearDownWithError() throws {
         mockService = nil
+        viewModel = nil
     }
 
     func testSearchBarBeginEditing() throws {
+
         var events = 0
+
+        // Given Event Listener
         viewModel.output.showSearchBarCancelButton = { _ in
             events += 1
         }
+
+        // When Event is triggerd
         viewModel.input.searchBarBeginEditing?()
+
+        // Event Count increases
         XCTAssertEqual(events, 1)
     }
 
     func testSearchBarEndEditing() throws {
+
         var events = 0
+
+        // Given Event Listener
         viewModel.output.showSearchBarCancelButton = { _ in
             events += 1
         }
 
+        // When Event is triggerd
         viewModel.input.searchBarEndEditing?()
+
+        // Event Count increases
         XCTAssertEqual(events, 1)
     }
 
     func testSearchBarCancel() throws {
         var events = 0
 
+        // Given 3 Event Listeners
         viewModel.output.showSearchBarCancelButton = { _ in
             events += 1
         }
@@ -55,8 +70,10 @@ class SearchUserViewModelTests: XCTestCase {
             events += 1
         }
 
+        // When Event is triggerd
         viewModel.input.searchBarCancel?()
 
+        // Event Count increases
         XCTAssertEqual(events, 3)
     }
 

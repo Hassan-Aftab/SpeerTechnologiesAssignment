@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Builds and returns view when user is not found
 class NoUserFoundBuilder {
     static func build() -> NoUserFoundView {
         UINib(nibName: "NoUserFoundView", bundle: nil)

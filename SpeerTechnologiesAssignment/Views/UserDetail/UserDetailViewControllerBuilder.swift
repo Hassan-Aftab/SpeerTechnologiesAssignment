@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Builds and returns UserDetailViewController
 class UserDetailViewControllerBuilder {
     class func build() -> UserDetailViewController? {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

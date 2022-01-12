@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class SearchUserViewModel {
+    //MARK: Input/Output
     struct Input {
         var searchBarBeginEditing: (()->())?
         var searchBarEndEditing: (()->())?
@@ -28,10 +29,13 @@ class SearchUserViewModel {
         var onToFollowers: ((User)->())?
     }
 
+    //MARK: properties
     var input = Input()
     var output = Output()
 
     private let searchUserService: SearchUserHandler!
+
+    //MARK: Init
     init(_ searchUserService: SearchUserHandler = SearchUserHandlerService()) {
         self.searchUserService = searchUserService
 
@@ -57,6 +61,7 @@ class SearchUserViewModel {
         }
     }
 
+    //MARK: API Call
     func search(_ username: String) {
         guard username != "" else { return }
         searchUserService.searchUser(username: username) { res in

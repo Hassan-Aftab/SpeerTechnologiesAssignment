@@ -7,12 +7,15 @@
 
 import UIKit
 
+/// completion handler after parsing api
 typealias CompletionHandler<T:Codable> = (Result<T, Error>)->()
 
+/// Protocol for bridging gap between network service and NetworkCallHandler
 protocol NetworkService {
     func sendGetRequest<T: Codable>(_ request: GithubAPI, completion: @escaping CompletionHandler<T>)
 }
 
+/// Default implementation for NetworkServices
 class DefaultNetworkService : NetworkService {
 
     private let networkHandler: NetworkCallHandler
@@ -41,11 +44,13 @@ class DefaultNetworkService : NetworkService {
     }
 }
 
+/// Basic Errors to be returned in case of some failures
 enum NetworkError: Error {
     case invalidURL
     case nilData
     case typeCastingError
 }
+
 extension NetworkError {
     var localizedDescription: String {
         switch self {

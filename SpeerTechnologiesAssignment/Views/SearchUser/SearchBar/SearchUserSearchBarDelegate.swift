@@ -7,6 +7,7 @@
 
 import UIKit
 
+// SearchBar Delegate Handler
 class SearchUserSearchBarDelegate: NSObject, UISearchBarDelegate {
 
     var interactor: SearchUserSearchBarInteractorType

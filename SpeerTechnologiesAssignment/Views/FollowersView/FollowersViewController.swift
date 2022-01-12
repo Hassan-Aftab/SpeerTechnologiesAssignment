@@ -12,12 +12,13 @@ import SwiftUI
 
 class FollowersViewController: UIViewController {
 
-
+    //MARK: Properties
     @IBOutlet var collectionView: UICollectionView!
     
     private var users: [User]?
     public var viewModel: FollowersViewModel?
 
+    //MARK: VC Lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
         let collectionLayout = UICollectionViewFlowLayout()
@@ -33,6 +34,7 @@ class FollowersViewController: UIViewController {
         self.title = "Followers"
     }
 
+    /// Bind views to send/receive events
     func bindViews() {
 
         viewModel?.output.setLoaderHidden = {
@@ -60,6 +62,8 @@ class FollowersViewController: UIViewController {
             self.showUserDetail(for: $0)
         }
     }
+
+    //MARK: Presentation Logic
     func showErrorMessage(_ message: String) {
         let dialog = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         dialog.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
@@ -73,6 +77,7 @@ class FollowersViewController: UIViewController {
     }
 }
 
+//MARK: UICollectionView Delegate/DataSource
 extension FollowersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         users?.count ?? 0

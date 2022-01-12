@@ -7,17 +7,22 @@
 
 import Foundation
 
+/// Completion Handler for api call
 typealias NetworkCallCompletionHandler = (Data?, URLResponse?, Error?)->()
 
+/// HTTP methods
 enum HTTPMethod: String {
     case GET = "GET"
     case POST = "POST"
 }
 
+/// protocol for network calls
 protocol NetworkCallHandler {
     func sendGetRequest(url: String, params: [String: String], completionHandler: @escaping NetworkCallCompletionHandler)
 }
 
+
+/// Performs network calls using URLSession
 class URLSessionNetworkCallHandler: NetworkCallHandler {
     func sendGetRequest(url: String, params: [String: String], completionHandler: @escaping NetworkCallCompletionHandler) {
 

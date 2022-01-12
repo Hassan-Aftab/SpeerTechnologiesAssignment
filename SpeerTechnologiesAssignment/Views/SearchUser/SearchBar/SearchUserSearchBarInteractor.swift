@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Bridge between delegate and event notification
 protocol SearchUserSearchBarInteractorType {
     var onBeginEditing: (()->())? { get set }
     var onEndEditing: (()->())? { get set }

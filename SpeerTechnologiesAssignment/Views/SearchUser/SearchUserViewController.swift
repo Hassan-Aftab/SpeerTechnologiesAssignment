@@ -12,6 +12,7 @@ import SwiftUI
 
 class SearchUserViewController: UIViewController {
 
+    //MARK: Properties
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
@@ -31,6 +32,7 @@ class SearchUserViewController: UIViewController {
 
     private var user: User?
 
+    //MARK: VC Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +43,7 @@ class SearchUserViewController: UIViewController {
         bindViews()
     }
 
+    //MARK: View handling
     func setupSubviews() {
         errorView.addSubview(noUserFoundView)
         noUserFoundView.translatesAutoresizingMaskIntoConstraints = false
@@ -121,6 +124,8 @@ class SearchUserViewController: UIViewController {
         self.followingCountButton.setTitle(String(user.following ?? 0) + " followings", for: .normal)
         self.descriptionTextView.text = user.bio
     }
+
+    //MARK: Routing
     @IBAction func followerCountButtonPressed(_ sender: Any) {
         guard let user = user else {
             return

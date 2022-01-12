@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Request for fetching followers
 struct GetFollowersRequest: GithubAPI {
 
     var baseURLProvider: APIURLProvider

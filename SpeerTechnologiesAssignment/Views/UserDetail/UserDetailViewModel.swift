@@ -8,6 +8,8 @@
 import Foundation
 
 class UserDetailViewModel {
+
+    //MARK: Input/Output Events
     struct Input {
         var viewDidAppear: ((User)->())?
     }
@@ -18,21 +20,25 @@ class UserDetailViewModel {
         var setLoaderHidden: ((Bool)->())?
     }
 
+    //MARK: Properties
     var input = Input()
     var output = Output()
 
     private let searchUserService: SearchUserHandler!
+
+    //MARK: Init
     init(_ searchUserService: SearchUserHandler = SearchUserHandlerService()) {
         self.searchUserService = searchUserService
 
         input.viewDidAppear = {
-            self.search($0.username)
+            self.getDetails($0.username)
             self.output.setLoaderHidden?(false)
         }
 
     }
 
-    func search(_ username: String) {
+    //MARK: API Call
+    func getDetails(_ username: String) {
         searchUserService.searchUser(username: username) { res in
             self.output.setLoaderHidden?(true)
             switch res {

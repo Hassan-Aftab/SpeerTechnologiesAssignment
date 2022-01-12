@@ -5,7 +5,7 @@
 //  Created by Hassan Aftab on 12/01/2022.
 //
 
-
+/// Model for User/Follower
 struct User: Codable {
     let username: String
     let id: Int64
