@@ -7,15 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B850B278F18A900385F9D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850A278F18A900385F9D /* UserDetailViewController.swift */; };
+		046B850D278F1A6100385F9D /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850C278F1A6100385F9D /* UserDetailViewModel.swift */; };
+		046B850F278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */; };
+		046B8511278F2B1B00385F9D /* MockUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B8510278F2B1B00385F9D /* MockUser.json */; };
+		046B8513278F2C0800385F9D /* MockNoUserFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 046B8512278F2C0800385F9D /* MockNoUserFound.json */; };
 		046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */; };
 		046B85D9278DFCCD00BB5E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */; };
-		046B85DB278DFCCD00BB5E6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85DA278DFCCD00BB5E6D /* ViewController.swift */; };
+		046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */; };
 		046B85DE278DFCCD00BB5E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B85DC278DFCCD00BB5E6D /* Main.storyboard */; };
 		046B85E0278DFCD000BB5E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B85DF278DFCD000BB5E6D /* Assets.xcassets */; };
 		046B85E3278DFCD000BB5E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B85E1278DFCD000BB5E6D /* LaunchScreen.storyboard */; };
 		046B85EE278DFCD000BB5E6D /* SpeerTechnologiesAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85ED278DFCD000BB5E6D /* SpeerTechnologiesAssignmentTests.swift */; };
 		046B85F8278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85F7278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITests.swift */; };
 		046B85FA278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85F9278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITestsLaunchTests.swift */; };
+		046B8608278E06E600BB5E6D /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8607278E06E600BB5E6D /* SearchUserViewModel.swift */; };
+		046B860B278E071000BB5E6D /* NoUserFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046B860A278E071000BB5E6D /* NoUserFoundView.xib */; };
+		046B860D278E071E00BB5E6D /* NoUserFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B860C278E071E00BB5E6D /* NoUserFoundView.swift */; };
+		046B8612278E098200BB5E6D /* NetworkCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B860F278E098200BB5E6D /* NetworkCallHandler.swift */; };
+		046B8613278E098200BB5E6D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8611278E098200BB5E6D /* NetworkService.swift */; };
+		046B8621278E09CA00BB5E6D /* SearchUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8616278E09CA00BB5E6D /* SearchUserResponse.swift */; };
+		046B8622278E09CA00BB5E6D /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8617278E09CA00BB5E6D /* SearchUserRequest.swift */; };
+		046B8623278E09CA00BB5E6D /* SearchUserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8618278E09CA00BB5E6D /* SearchUserHandler.swift */; };
+		046B8624278E09CA00BB5E6D /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8619278E09CA00BB5E6D /* GithubAPI.swift */; };
+		046B8627278E09CA00BB5E6D /* GetFollowersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B861D278E09CA00BB5E6D /* GetFollowersResponse.swift */; };
+		046B8628278E09CA00BB5E6D /* GetFollowersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B861E278E09CA00BB5E6D /* GetFollowersRequest.swift */; };
+		046B8629278E09CA00BB5E6D /* GetFollowersHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B861F278E09CA00BB5E6D /* GetFollowersHandler.swift */; };
+		046B862A278E09CA00BB5E6D /* APIURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8620278E09CA00BB5E6D /* APIURLProvider.swift */; };
+		046B862D278E0F3000BB5E6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B862C278E0F3000BB5E6D /* User.swift */; };
+		046B862F278E1BB700BB5E6D /* NoUserFoundResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B862E278E1BB700BB5E6D /* NoUserFoundResponse.swift */; };
+		046B8631278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8630278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift */; };
+		046B8634278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B8633278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift */; };
+		046BFEFF278EF0D60051EC63 /* IHProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 046BFEFE278EF0D60051EC63 /* IHProgressHUD */; };
+		046BFF02278EF5370051EC63 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 046BFF01278EF5370051EC63 /* Kingfisher */; };
+		046BFF04278EF8BF0051EC63 /* NoUserFoundBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */; };
+		046BFF09278F04530051EC63 /* FollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */; };
+		046BFF0A278F04590051EC63 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF08278EFCC80051EC63 /* FollowersViewController.swift */; };
+		046BFF0C278F090A0051EC63 /* FollowerFollowingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */; };
+		046BFF0E278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */; };
+		046BFF10278F0CE70051EC63 /* FollowersViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +66,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046B850A278F18A900385F9D /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		046B850C278F1A6100385F9D /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerBuilder.swift; sourceTree = "<group>"; };
+		046B8510278F2B1B00385F9D /* MockUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockUser.json; sourceTree = "<group>"; };
+		046B8512278F2C0800385F9D /* MockNoUserFound.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNoUserFound.json; sourceTree = "<group>"; };
 		046B85D3278DFCCD00BB5E6D /* SpeerTechnologiesAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeerTechnologiesAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		046B85DA278DFCCD00BB5E6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		046B85DD278DFCCD00BB5E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046B85DF278DFCD000BB5E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046B85E2278DFCD000BB5E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +84,29 @@
 		046B85F3278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeerTechnologiesAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B85F7278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeerTechnologiesAssignmentUITests.swift; sourceTree = "<group>"; };
 		046B85F9278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeerTechnologiesAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		046B8607278E06E600BB5E6D /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
+		046B860A278E071000BB5E6D /* NoUserFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoUserFoundView.xib; sourceTree = "<group>"; };
+		046B860C278E071E00BB5E6D /* NoUserFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserFoundView.swift; sourceTree = "<group>"; };
+		046B860F278E098200BB5E6D /* NetworkCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCallHandler.swift; sourceTree = "<group>"; };
+		046B8611278E098200BB5E6D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		046B8616278E09CA00BB5E6D /* SearchUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserResponse.swift; sourceTree = "<group>"; };
+		046B8617278E09CA00BB5E6D /* SearchUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
+		046B8618278E09CA00BB5E6D /* SearchUserHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserHandler.swift; sourceTree = "<group>"; };
+		046B8619278E09CA00BB5E6D /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		046B861D278E09CA00BB5E6D /* GetFollowersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFollowersResponse.swift; sourceTree = "<group>"; };
+		046B861E278E09CA00BB5E6D /* GetFollowersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFollowersRequest.swift; sourceTree = "<group>"; };
+		046B861F278E09CA00BB5E6D /* GetFollowersHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFollowersHandler.swift; sourceTree = "<group>"; };
+		046B8620278E09CA00BB5E6D /* APIURLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLProvider.swift; sourceTree = "<group>"; };
+		046B862C278E0F3000BB5E6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		046B862E278E1BB700BB5E6D /* NoUserFoundResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserFoundResponse.swift; sourceTree = "<group>"; };
+		046B8630278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserSearchBarDelegate.swift; sourceTree = "<group>"; };
+		046B8633278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserSearchBarInteractor.swift; sourceTree = "<group>"; };
+		046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserFoundBuilder.swift; sourceTree = "<group>"; };
+		046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewModel.swift; sourceTree = "<group>"; };
+		046BFF08278EFCC80051EC63 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerFollowingCell.swift; sourceTree = "<group>"; };
+		046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewControllerBuilder.swift; sourceTree = "<group>"; };
+		046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046BFF02278EF5370051EC63 /* Kingfisher in Frameworks */,
+				046BFEFF278EF0D60051EC63 /* IHProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +136,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046B8508278F188F00385F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046B8509278F189800385F9D /* UserDetail */,
+				046BFF05278EFCA20051EC63 /* FollowersView */,
+				046B8606278E06D600BB5E6D /* SearchUser */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		046B8509278F189800385F9D /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				046B850A278F18A900385F9D /* UserDetailViewController.swift */,
+				046B850C278F1A6100385F9D /* UserDetailViewModel.swift */,
+				046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		046B8514278F2C1700385F9D /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				046B8510278F2B1B00385F9D /* MockUser.json */,
+				046B8512278F2C0800385F9D /* MockNoUserFound.json */,
+			);
+			path = MockObjects;
+			sourceTree = "<group>";
+		};
 		046B85CA278DFCCD00BB5E6D = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +190,11 @@
 			children = (
 				046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */,
 				046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */,
-				046B85DA278DFCCD00BB5E6D /* ViewController.swift */,
+				046B862B278E0EF300BB5E6D /* Models */,
+				046B8614278E09CA00BB5E6D /* NetworkCalls */,
+				046B860E278E098100BB5E6D /* NetworkLayer */,
+				046B8610278E098200BB5E6D /* NetworkService */,
+				046B8508278F188F00385F9D /* Views */,
 				046B85DC278DFCCD00BB5E6D /* Main.storyboard */,
 				046B85DF278DFCD000BB5E6D /* Assets.xcassets */,
 				046B85E1278DFCD000BB5E6D /* LaunchScreen.storyboard */,
@@ -114,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				046B85ED278DFCD000BB5E6D /* SpeerTechnologiesAssignmentTests.swift */,
+				046B8514278F2C1700385F9D /* MockObjects */,
 			);
 			path = SpeerTechnologiesAssignmentTests;
 			sourceTree = "<group>";
@@ -125,6 +219,104 @@
 				046B85F9278DFCD000BB5E6D /* SpeerTechnologiesAssignmentUITestsLaunchTests.swift */,
 			);
 			path = SpeerTechnologiesAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		046B8606278E06D600BB5E6D /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				046B8632278E200900BB5E6D /* SearchBar */,
+				046B8609278E06F800BB5E6D /* No User Found View */,
+				046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */,
+				046B8607278E06E600BB5E6D /* SearchUserViewModel.swift */,
+				046BFF0D278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift */,
+			);
+			path = SearchUser;
+			sourceTree = "<group>";
+		};
+		046B8609278E06F800BB5E6D /* No User Found View */ = {
+			isa = PBXGroup;
+			children = (
+				046B860A278E071000BB5E6D /* NoUserFoundView.xib */,
+				046B860C278E071E00BB5E6D /* NoUserFoundView.swift */,
+				046BFF03278EF8BF0051EC63 /* NoUserFoundBuilder.swift */,
+			);
+			path = "No User Found View";
+			sourceTree = "<group>";
+		};
+		046B860E278E098100BB5E6D /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				046B8620278E09CA00BB5E6D /* APIURLProvider.swift */,
+				046B8619278E09CA00BB5E6D /* GithubAPI.swift */,
+				046B860F278E098200BB5E6D /* NetworkCallHandler.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		046B8610278E098200BB5E6D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				046B8611278E098200BB5E6D /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		046B8614278E09CA00BB5E6D /* NetworkCalls */ = {
+			isa = PBXGroup;
+			children = (
+				046B8615278E09CA00BB5E6D /* SearchUserAPI */,
+				046B861C278E09CA00BB5E6D /* GetFollowersAPI */,
+			);
+			path = NetworkCalls;
+			sourceTree = "<group>";
+		};
+		046B8615278E09CA00BB5E6D /* SearchUserAPI */ = {
+			isa = PBXGroup;
+			children = (
+				046B862E278E1BB700BB5E6D /* NoUserFoundResponse.swift */,
+				046B8616278E09CA00BB5E6D /* SearchUserResponse.swift */,
+				046B8617278E09CA00BB5E6D /* SearchUserRequest.swift */,
+				046B8618278E09CA00BB5E6D /* SearchUserHandler.swift */,
+			);
+			path = SearchUserAPI;
+			sourceTree = "<group>";
+		};
+		046B861C278E09CA00BB5E6D /* GetFollowersAPI */ = {
+			isa = PBXGroup;
+			children = (
+				046B861D278E09CA00BB5E6D /* GetFollowersResponse.swift */,
+				046B861E278E09CA00BB5E6D /* GetFollowersRequest.swift */,
+				046B861F278E09CA00BB5E6D /* GetFollowersHandler.swift */,
+			);
+			path = GetFollowersAPI;
+			sourceTree = "<group>";
+		};
+		046B862B278E0EF300BB5E6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				046B862C278E0F3000BB5E6D /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		046B8632278E200900BB5E6D /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				046B8630278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift */,
+				046B8633278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		046BFF05278EFCA20051EC63 /* FollowersView */ = {
+			isa = PBXGroup;
+			children = (
+				046BFF08278EFCC80051EC63 /* FollowersViewController.swift */,
+				046BFF07278EFCC80051EC63 /* FollowersViewModel.swift */,
+				046BFF0B278F090A0051EC63 /* FollowerFollowingCell.swift */,
+				046BFF0F278F0CE70051EC63 /* FollowersViewControllerBuilder.swift */,
+			);
+			path = FollowersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +335,10 @@
 			dependencies = (
 			);
 			name = SpeerTechnologiesAssignment;
+			packageProductDependencies = (
+				046BFEFE278EF0D60051EC63 /* IHProgressHUD */,
+				046BFF01278EF5370051EC63 /* Kingfisher */,
+			);
 			productName = SpeerTechnologiesAssignment;
 			productReference = 046B85D3278DFCCD00BB5E6D /* SpeerTechnologiesAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +411,10 @@
 				Base,
 			);
 			mainGroup = 046B85CA278DFCCD00BB5E6D;
+			packageReferences = (
+				046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */,
+				046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 046B85D4278DFCCD00BB5E6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +434,7 @@
 				046B85E3278DFCD000BB5E6D /* LaunchScreen.storyboard in Resources */,
 				046B85E0278DFCD000BB5E6D /* Assets.xcassets in Resources */,
 				046B85DE278DFCCD00BB5E6D /* Main.storyboard in Resources */,
+				046B860B278E071000BB5E6D /* NoUserFoundView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +442,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046B8511278F2B1B00385F9D /* MockUser.json in Resources */,
+				046B8513278F2C0800385F9D /* MockNoUserFound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +461,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046B85DB278DFCCD00BB5E6D /* ViewController.swift in Sources */,
+				046B8627278E09CA00BB5E6D /* GetFollowersResponse.swift in Sources */,
+				046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */,
+				046B850B278F18A900385F9D /* UserDetailViewController.swift in Sources */,
+				046B8629278E09CA00BB5E6D /* GetFollowersHandler.swift in Sources */,
+				046BFF0E278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift in Sources */,
+				046B8634278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift in Sources */,
+				046B8608278E06E600BB5E6D /* SearchUserViewModel.swift in Sources */,
 				046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */,
+				046BFF0A278F04590051EC63 /* FollowersViewController.swift in Sources */,
+				046B850D278F1A6100385F9D /* UserDetailViewModel.swift in Sources */,
+				046BFF04278EF8BF0051EC63 /* NoUserFoundBuilder.swift in Sources */,
+				046BFF10278F0CE70051EC63 /* FollowersViewControllerBuilder.swift in Sources */,
+				046B850F278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift in Sources */,
+				046BFF0C278F090A0051EC63 /* FollowerFollowingCell.swift in Sources */,
+				046B8624278E09CA00BB5E6D /* GithubAPI.swift in Sources */,
+				046B862F278E1BB700BB5E6D /* NoUserFoundResponse.swift in Sources */,
+				046B8631278E1F0700BB5E6D /* SearchUserSearchBarDelegate.swift in Sources */,
+				046BFF09278F04530051EC63 /* FollowersViewModel.swift in Sources */,
 				046B85D9278DFCCD00BB5E6D /* SceneDelegate.swift in Sources */,
+				046B862D278E0F3000BB5E6D /* User.swift in Sources */,
+				046B8622278E09CA00BB5E6D /* SearchUserRequest.swift in Sources */,
+				046B8628278E09CA00BB5E6D /* GetFollowersRequest.swift in Sources */,
+				046B8621278E09CA00BB5E6D /* SearchUserResponse.swift in Sources */,
+				046B862A278E09CA00BB5E6D /* APIURLProvider.swift in Sources */,
+				046B860D278E071E00BB5E6D /* NoUserFoundView.swift in Sources */,
+				046B8612278E098200BB5E6D /* NetworkCallHandler.swift in Sources */,
+				046B8623278E09CA00BB5E6D /* SearchUserHandler.swift in Sources */,
+				046B8613278E098200BB5E6D /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +846,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftify-Corp/IHProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		046BFEFE278EF0D60051EC63 /* IHProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046BFEFD278EF0D60051EC63 /* XCRemoteSwiftPackageReference "IHProgressHUD" */;
+			productName = IHProgressHUD;
+		};
+		046BFF01278EF5370051EC63 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046BFF00278EF5370051EC63 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 046B85CB278DFCCD00BB5E6D /* Project object */;
 }
