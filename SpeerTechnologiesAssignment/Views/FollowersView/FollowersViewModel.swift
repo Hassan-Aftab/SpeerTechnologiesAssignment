@@ -11,17 +11,14 @@ import UIKit
 class FollowersViewModel {
     struct Input {
         var viewDidAppear: (()->())?
-//        var searchBarEndEditing: (()->())?
-//        var searchBarCancel: (()->())?
-//        var search: ((String)->())?
-//        var getFollowers: ((User)->())?
+        var didSelect: ((User)->())?
     }
 
     struct Output {
         var showFollowers: (([User])->())?
         var setLoaderHidden: ((Bool)->())?
         var onError: ((Error)->())?
-
+        var showUserDetail:((User?)->())?
     }
 
     var input = Input()
@@ -40,6 +37,9 @@ class FollowersViewModel {
             self.getFollowers(username)
         }
 
+        input.didSelect = {
+            self.output.showUserDetail?($0)
+        }
     }
 
     func getFollowers(_ username: String) {

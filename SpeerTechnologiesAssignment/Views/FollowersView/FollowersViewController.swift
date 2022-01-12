@@ -21,11 +21,14 @@ class FollowersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViews()
+        let collectionLayout = UICollectionViewFlowLayout()
+        collectionView.collectionViewLayout = collectionLayout
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewModel?.input.viewDidAppear?()
+        self.title = "Followers"
     }
 
     func bindViews() {
@@ -51,11 +54,20 @@ class FollowersViewController: UIViewController {
                 self.showErrorMessage(error.localizedDescription)
             }
         }
+        viewModel?.output.showUserDetail = {
+            self.showUserDetail(for: $0)
+        }
     }
     func showErrorMessage(_ message: String) {
         let dialog = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         dialog.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         self.present(dialog, animated: true, completion: nil)
+    }
+    func showUserDetail(for user: User?) {
+        guard let user = user,
+              let vc = UserDetailViewControllerBuilder.build() else { return }
+        vc.user = user
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -64,7 +76,7 @@ extension FollowersViewController: UICollectionViewDelegate, UICollectionViewDat
         users?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FollowerFollowingCell", for: indexPath) as? FollowerFollowingCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "followerCell", for: indexPath) as? FollowerFollowingCell else {
             return UICollectionViewCell()
         }
 
@@ -74,12 +86,13 @@ extension FollowersViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        if let user = users?[indexPath.item] {
+            viewModel?.input.didSelect?(user)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (view.frame.width/2)-30
-        print(width)
         return CGSize(width: width, height: width)
     }
 

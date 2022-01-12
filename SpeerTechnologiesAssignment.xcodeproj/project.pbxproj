@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B850B278F18A900385F9D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850A278F18A900385F9D /* UserDetailViewController.swift */; };
+		046B850D278F1A6100385F9D /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850C278F1A6100385F9D /* UserDetailViewModel.swift */; };
+		046B850F278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */; };
 		046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */; };
 		046B85D9278DFCCD00BB5E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */; };
 		046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B85DA278DFCCD00BB5E6D /* SearchUserViewController.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046B850A278F18A900385F9D /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		046B850C278F1A6100385F9D /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerBuilder.swift; sourceTree = "<group>"; };
 		046B85D3278DFCCD00BB5E6D /* SpeerTechnologiesAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeerTechnologiesAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B85D6278DFCCD00BB5E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		046B85D8278DFCCD00BB5E6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046B8508278F188F00385F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046B8509278F189800385F9D /* UserDetail */,
+				046BFF05278EFCA20051EC63 /* FollowersView */,
+				046B8606278E06D600BB5E6D /* SearchUser */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		046B8509278F189800385F9D /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				046B850A278F18A900385F9D /* UserDetailViewController.swift */,
+				046B850C278F1A6100385F9D /* UserDetailViewModel.swift */,
+				046B850E278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		046B85CA278DFCCD00BB5E6D = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +181,7 @@
 				046B8614278E09CA00BB5E6D /* NetworkCalls */,
 				046B860E278E098100BB5E6D /* NetworkLayer */,
 				046B8610278E098200BB5E6D /* NetworkService */,
-				046BFF05278EFCA20051EC63 /* FollowersView */,
-				046B8606278E06D600BB5E6D /* SearchUser */,
+				046B8508278F188F00385F9D /* Views */,
 				046B85DC278DFCCD00BB5E6D /* Main.storyboard */,
 				046B85DF278DFCD000BB5E6D /* Assets.xcassets */,
 				046B85E1278DFCD000BB5E6D /* LaunchScreen.storyboard */,
@@ -422,14 +447,17 @@
 			files = (
 				046B8627278E09CA00BB5E6D /* GetFollowersResponse.swift in Sources */,
 				046B85DB278DFCCD00BB5E6D /* SearchUserViewController.swift in Sources */,
+				046B850B278F18A900385F9D /* UserDetailViewController.swift in Sources */,
 				046B8629278E09CA00BB5E6D /* GetFollowersHandler.swift in Sources */,
 				046BFF0E278F0C7D0051EC63 /* SearchUserViewControllerBuilder.swift in Sources */,
 				046B8634278E202E00BB5E6D /* SearchUserSearchBarInteractor.swift in Sources */,
 				046B8608278E06E600BB5E6D /* SearchUserViewModel.swift in Sources */,
 				046B85D7278DFCCD00BB5E6D /* AppDelegate.swift in Sources */,
 				046BFF0A278F04590051EC63 /* FollowersViewController.swift in Sources */,
+				046B850D278F1A6100385F9D /* UserDetailViewModel.swift in Sources */,
 				046BFF04278EF8BF0051EC63 /* NoUserFoundBuilder.swift in Sources */,
 				046BFF10278F0CE70051EC63 /* FollowersViewControllerBuilder.swift in Sources */,
+				046B850F278F1B3A00385F9D /* UserDetailViewControllerBuilder.swift in Sources */,
 				046BFF0C278F090A0051EC63 /* FollowerFollowingCell.swift in Sources */,
 				046B8624278E09CA00BB5E6D /* GithubAPI.swift in Sources */,
 				046B862F278E1BB700BB5E6D /* NoUserFoundResponse.swift in Sources */,
